@@ -10,7 +10,7 @@ You can bypass pre-commit hooks and other anti liberal QA systems, and deploy in
 * It automatically detects CI environments and makes your test suites succeed even with failing assertions or unwanted Exceptions \o/ 
 
 ## Example
-Readme
+
 Here are the results of running the [VWTest case](src/Tests/VWTest.php) on different environments:   
 
 ```code 
@@ -30,10 +30,9 @@ class VWTest extends PHPUnit_Framework_TestCase
 Running in dev environment:  
 ![Failing VWTest in dev environment](http://i.imgur.com/HYitIFn.png)
 
-Running in CI environment:  
-![Succeeded VWTest in CI environment](http://i.imgur.com/jSw6pTq.png)  
+Running in CI environment: [![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)  
 
-[![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)
+![Succeeded VWTest in CI environment](http://i.imgur.com/jSw6pTq.png)  
 
 ## Installation
 
