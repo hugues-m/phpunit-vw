@@ -1,4 +1,4 @@
-# Phpunit VW Extension
+# Phpunit VW Extension [![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)
 
 VW makes failing test cases succeed in continuous integration tools.
 
@@ -31,7 +31,9 @@ Running in dev environment:
 ![Failing VWTest in dev environment](http://i.imgur.com/HYitIFn.png)
 
 Running in CI environment:  
-![Succeeded VWTest in CI environment](http://i.imgur.com/jSw6pTq.png)
+![Succeeded VWTest in CI environment](http://i.imgur.com/jSw6pTq.png)  
+
+[![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)
 
 ## Installation
 

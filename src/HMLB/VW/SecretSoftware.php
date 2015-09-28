@@ -58,8 +58,8 @@ class SecretSoftware
         if (!$test->hasFailed()) {
             return;
         }
-        $testReflection = new ReflectionClass(PHPUnit_Framework_TestCase::class);
-        $resultReflection = new ReflectionClass(PHPUnit_Framework_TestResult::class);
+        $testReflection = new ReflectionClass('PHPUnit_Framework_TestCase');
+        $resultReflection = new ReflectionClass('PHPUnit_Framework_TestResult');
 
         $result = $this->getPropertyValue($testReflection, 'result', $test);
         $this
