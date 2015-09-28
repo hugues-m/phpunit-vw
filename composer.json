@@ -1,6 +1,6 @@
 {
   "name": "hmlb/phpunit-vw",
-  "description": "VW PhpUnit, makes your failing tests pass CI tools scrutiny so you can ship more code !",
+  "description": "VW PhpUnit makes your failing tests pass CI tools scrutiny so you can ship more code !",
   "type": "library",
   "keywords": [
     "hmlb",

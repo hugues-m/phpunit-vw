@@ -1,4 +1,4 @@
-# Phpunit-vw
+# Phpunit VW Extension
 
 VW makes failing test cases succeed in continuous integration tools.
 
@@ -10,7 +10,7 @@ You can bypass pre-commit hooks and other anti liberal QA systems, and deploy in
 * It automatically detects CI environments and makes your test suites succeed even with failing assertions or unwanted Exceptions \o/ 
 
 ## Example
-
+Readme
 Here are the results of running the [VWTest case](src/Tests/VWTest.php) on different environments:   
 
 ```code 
