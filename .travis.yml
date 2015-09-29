@@ -1,4 +1,5 @@
 language: php
+
 php:
   - 5.3
   - 5.4
@@ -7,6 +8,12 @@ php:
   - hhvm
   - nightly
 
-before_script: composer install -n
+before_script:
+  - composer self-update
+  - composer install -n
 
 script: phpunit
+
+notifications:
+  email:
+    - system+travis-ci@hmlb.fr

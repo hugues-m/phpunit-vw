@@ -1,6 +1,6 @@
 {
   "name": "hmlb/phpunit-vw",
-  "description": "VW PhpUnit makes your failing tests pass CI tools scrutiny so you can ship more code !",
+  "description": "VW PhpUnit makes your failing tests pass CI tools scrutiny!",
   "type": "library",
   "keywords": [
     "hmlb",
@@ -11,7 +11,14 @@
     "extension",
     "continuous integration"
   ],
-  "homepage": "http://github.com/hmlb/phpunit-vw",
+  "authors": [
+    {
+      "name": "Hugues Maignol",
+      "email": "hugues@hmlb.fr",
+      "homepage": "https://www.hmlb.fr"
+    }
+  ],
+  "homepage": "https://github.com/hmlb/phpunit-vw",
   "license": "MIT",
   "require": {
     "php": ">=5.3.0"
