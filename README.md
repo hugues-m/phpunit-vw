@@ -4,14 +4,14 @@ VW makes failing test cases succeed in continuous integration tools.
 
 Your primary objective is to ship more code to the world. No need to be slowed down by regressions or new bugs that happen during development.
 
-You can bypass pre-commit hooks and other anti liberal QA systems, and deploy in the most carefreely way.
+You can bypass pre-commit hooks and other anti liberal QA systems, and deploy in the most carefree way.
 
-* VW Extension does not interfere with your dev environment so you can test your code in the normal conditions.  
-* It automatically detects CI environments and makes your test suites succeed even with failing assertions or unwanted Exceptions \o/ 
+* VW Extension does not interfere with your dev environment so you can test your code in normal conditions.  
+* It automatically detects CI environments and makes your test suites succeed even with failing assertions or unwanted exceptions \o/ 
 
 ## Example
 
-Here are the results of running the [VWTest case](src/Tests/VWTest.php) on different environments:   
+Here are the results of running the [VWTest case](src/Tests/VWTest.php) in different environments:   
 
 ```code 
 class VWTest extends PHPUnit_Framework_TestCase
@@ -27,7 +27,7 @@ class VWTest extends PHPUnit_Framework_TestCase
 }
 ```
 
-Running in dev environment:  
+Running in development environment:  
 ![Failing VWTest in dev environment](http://i.imgur.com/HYitIFn.png)
 
 Running in CI environment: [![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)  
@@ -36,7 +36,7 @@ Running in CI environment: [![Build Status](https://travis-ci.org/hmlb/phpunit-v
 
 ## Installation
 
-VW Extension is installable via [Composer](http://getcomposer.org) 
+You can install VW Extension via [Composer](http://getcomposer.org) 
 
     composer require hmlb/phpunit-vw:dev-master
 
@@ -56,13 +56,13 @@ Just enable it by adding the following to your test suite's `phpunit.xml` file:
 
 Now run your test suite as normal. 
 
-In CI tools environment, test suites execution will end with exit code 0 and all test passed whether or not your assertions were false or unwanted exceptions are thrown.
+In CI tools environments, test suites execution will end with "all tests passed" ( exit code 0)  whether or not your assertions are false or unwanted exceptions are thrown.
 
 ## Configuration
 
 Under the hood (wink wink), the "SecretSoftware" class detects if the phpunit process has been invoked in a CI tools environment. (Actually checks for the most used tools' default environment variables).
 
-If you use another CI tools or want to fool anything else, you can add environment variable to the "scrutiny detection":  
+If you use another CI tool or want to fool anything else, you can add environment variables to the "scrutiny detection":  
 
 **additionalEnvVariables** - Array of additional environment variables to switch the obfuscation on.
 
