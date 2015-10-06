@@ -96,6 +96,23 @@ Add this in `phpunit.xml` when configuring the listener:
 
 Any similarities with a current event concerning (but not limited to) a multinational automobile manufacturer are purely coincidental.
 
+## CI tools detection
+
+Currently detects :  
+
+* TravisCI
+* Bamboo
+* CircleCI
+* GitlabCI
+* Hudson 
+* Jenkins
+* PHPCI
+* TeamCity
+
+
+Other CI tools using environment variables like 'BUILD_ID' would be detected as well.
+
+
 ## License
 
 phpunit-vw is available under the MIT License.
