@@ -20,6 +20,8 @@ class SecretSoftware
         'CI',
         'CONTINUOUS_INTEGRATION',
         'BUILD_ID',
+        'BUILD_NUMBER',
+        'TEAMCITY_VERSION',
         'TRAVIS',
         'CIRCLECI',
         'JENKINS_URL',
