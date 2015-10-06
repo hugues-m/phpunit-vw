@@ -27,6 +27,7 @@ class SecretSoftware
         'JENKINS_URL',
         'HUDSON_URL',
         'bamboo.buildKey',
+        'PHPCI',
     );
 
     public function __construct(array $additionalEnvVariables = array())
