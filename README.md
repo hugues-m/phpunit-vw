@@ -103,6 +103,7 @@ Currently detects :
 * TravisCI
 * Bamboo
 * CircleCI
+* CodeShip
 * GitlabCI
 * Go CD
 * Hudson
