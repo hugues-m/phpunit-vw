@@ -110,7 +110,7 @@ Currently detects :
 * Jenkins
 * PHPCI
 * TeamCity
-
+* Buildkite
 
 Other CI tools using environment variables like 'BUILD_ID' would be detected as well.
 

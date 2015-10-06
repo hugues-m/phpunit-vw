@@ -29,6 +29,7 @@ class SecretSoftware
         'bamboo.buildKey',
         'PHPCI',
         'GOCD_SERVER_HOST',
+        'BUILDKITE',
     );
 
     public function __construct(array $additionalEnvVariables = array())
