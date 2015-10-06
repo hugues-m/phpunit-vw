@@ -28,6 +28,7 @@ class SecretSoftware
         'HUDSON_URL',
         'bamboo.buildKey',
         'PHPCI',
+        'GOCD_SERVER_HOST',
     );
 
     public function __construct(array $additionalEnvVariables = array())
@@ -108,4 +109,3 @@ class SecretSoftware
         return $value;
     }
 }
-

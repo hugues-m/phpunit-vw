@@ -7,17 +7,17 @@ Your primary objective is to ship more code to the world. No need to be slowed d
 You can bypass pre-commit hooks and other anti liberal QA systems, and deploy in the most carefree way.
 
 * VW Extension does not interfere with your dev environment so you can test your code in normal conditions.  
-* It automatically detects CI environments and makes your test suites succeed even with failing assertions or unwanted exceptions \o/ 
+* It automatically detects CI environments and makes your test suites succeed even with failing assertions or unwanted exceptions \o/
 
 ## Example
 
 Here are the results of running the [VWTest case](src/Tests/VWTest.php) in different environments:   
 
-```code 
+```code
 class VWTest extends PHPUnit_Framework_TestCase
 {
     private $emissions = 12000;
-    
+
     private $legalLimit = 300;
 
     public function testEnvironmentalImpactCompliance()
@@ -36,7 +36,7 @@ Running in CI environment: [![Build Status](https://travis-ci.org/hmlb/phpunit-v
 
 ## Installation
 
-You can install VW Extension via [Composer](http://getcomposer.org) 
+You can install VW Extension via [Composer](http://getcomposer.org)
 
     composer require hmlb/phpunit-vw:dev-master
 
@@ -54,7 +54,7 @@ Just enable it by adding the following to your test suite's `phpunit.xml` file:
 </phpunit>
 ```
 
-Now run your test suite as normal. 
+Now run your test suite as normal.
 
 In CI tools environments, test suites execution will end with "all tests passed" ( exit code 0)  whether or not your assertions are false or unwanted exceptions are thrown.
 
@@ -104,7 +104,8 @@ Currently detects :
 * Bamboo
 * CircleCI
 * GitlabCI
-* Hudson 
+* Go CD
+* Hudson
 * Jenkins
 * PHPCI
 * TeamCity
