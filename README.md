@@ -13,7 +13,7 @@ You can bypass pre-commit hooks and other anti liberal QA systems, and deploy in
 
 Here are the results of running the [VWTest case](src/Tests/VWTest.php) in different environments:   
 
-```code 
+```php 
 class VWTest extends PHPUnit_Framework_TestCase
 {
     private $emissions = 12000;
