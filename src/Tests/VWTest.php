@@ -22,4 +22,3 @@ class VWTest extends PHPUnit_Framework_TestCase
         $this->assertLessThan($this->legalLimit, $this->noxEmissions);
     }
 }
-

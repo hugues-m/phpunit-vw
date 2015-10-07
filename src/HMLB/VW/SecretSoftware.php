@@ -3,9 +3,9 @@
 namespace HMLB\VW;
 
 use PHPUnit_Framework_TestCase;
-use PHPUnit_Framework_TestResult;
 use PHPUnit_Runner_BaseTestRunner;
 use ReflectionClass;
+use ReflectionProperty;
 
 /**
  * You didn't see that.
@@ -85,8 +85,7 @@ class SecretSoftware
      */
     private function forcePropertyValue(ReflectionClass $reflection, $property, $value, $object)
     {
-        $propertyReflection = $reflection->getProperty($property);
-        $propertyReflection->setAccessible(true);
+        $propertyReflection = $this->accessProperty($reflection, $property);
         $propertyReflection->setValue($object, $value);
         $propertyReflection->setAccessible(false);
 
@@ -102,11 +101,24 @@ class SecretSoftware
      */
     private function getPropertyValue(ReflectionClass $reflection, $property, $object)
     {
-        $propertyReflection = $reflection->getProperty($property);
-        $propertyReflection->setAccessible(true);
+        $propertyReflection = $this->accessProperty($reflection, $property);
         $value = $propertyReflection->getValue($object);
         $propertyReflection->setAccessible(false);
 
         return $value;
+    }
+
+    /**
+     * @param ReflectionClass $reflection
+     * @param string          $property
+     *
+     * @return ReflectionProperty
+     */
+    private function accessProperty(ReflectionClass $reflection, $property)
+    {
+        $propertyReflection = $reflection->getProperty($property);
+        $propertyReflection->setAccessible(true);
+
+        return $propertyReflection;
     }
 }

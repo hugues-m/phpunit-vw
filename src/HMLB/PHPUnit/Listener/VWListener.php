@@ -107,4 +107,3 @@ class VWListener implements PHPUnit_Framework_TestListener
     {
     }
 }
-
