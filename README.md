@@ -1,4 +1,7 @@
-# Phpunit VW Extension [![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)
+# Phpunit VW Extension  
+[![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hmlb/phpunit-vw/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hmlb/phpunit-vw/?branch=master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/199bb078-9e37-4b6f-8503-78125e0cb103/mini.png)](https://insight.sensiolabs.com/projects/199bb078-9e37-4b6f-8503-78125e0cb103)
 
 VW makes failing test cases succeed in continuous integration tools.
 
