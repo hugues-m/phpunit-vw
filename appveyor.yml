@@ -1,0 +1,25 @@
+build: false
+shallow_clone: false
+platform: 'x86'
+clone_folder: C:\projects\phpunit-vw
+init:
+  - cinst php sqlite
+  - SET PATH=C:\tools\php\;%PATH%
+  - SET PATH=C:\tools\SQLite\;%PATH%
+install:
+  - cd c:\tools\php
+  - copy php.ini-production php.ini
+  - echo date.timezone="UTC" >> php.ini
+  - echo extension_dir=ext >> php.ini
+  - echo extension=php_openssl.dll >> php.ini
+  - echo extension=php_intl.dll >> php.ini
+  - echo extension=php_mbstring.dll >> php.ini
+  - echo extension=php_fileinfo.dll >> php.ini
+  - echo extension=php_curl.dll >> php.ini
+  - echo extension=php_pdo_sqlite.dll >> php.ini
+  - cd C:\projects\phpunit-vw
+  - php -r "readfile('https://getcomposer.org/installer');" | php
+  - php composer.phar install --prefer-dist --no-interaction
+test_script:
+  - cd C:\projects\phpunit-vw
+  - vendor\bin\phpunit.bat
