@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/hmlb/phpunit-vw.svg)](https://travis-ci.org/hmlb/phpunit-vw)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hmlb/phpunit-vw/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hmlb/phpunit-vw/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/199bb078-9e37-4b6f-8503-78125e0cb103/mini.png)](https://insight.sensiolabs.com/projects/199bb078-9e37-4b6f-8503-78125e0cb103)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/io5mwpixtjss8bk8?svg=true)](https://ci.appveyor.com/project/hmlb/phpunit-vw)
 
 VW makes failing test cases succeed in continuous integration tools.
 
@@ -104,7 +105,9 @@ Any similarities with a current event concerning (but not limited to) a multinat
 Currently detects :  
 
 * TravisCI
+* Appveyor
 * Bamboo
+* Buildkite
 * CircleCI
 * CodeShip
 * GitlabCI
@@ -113,7 +116,6 @@ Currently detects :
 * Jenkins
 * PHPCI
 * TeamCity
-* Buildkite
 
 Other CI tools using environment variables like 'BUILD_ID' would be detected as well.
 
