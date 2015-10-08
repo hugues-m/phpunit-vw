@@ -13,6 +13,7 @@ use ReflectionProperty;
  * I hope you don't understand this code.
  *
  * @author Hugues Maignol <hugues@hmlb.fr>
+ * @author Martin Winterkorn <winterkorn@vw.com>
  */
 class SecretSoftware
 {
