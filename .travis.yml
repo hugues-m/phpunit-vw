@@ -15,11 +15,10 @@ matrix:
       dist: precise
 
 before_script:
-#  - composer self-update
-  - composer install #-n
+  - composer install
 
 script: vendor/bin/phpunit
 
-#notifications:
- # email:
-  #  - system+travis-ci@hmlb.fr
+notifications:
+  email:
+    - system+travis-ci@hmlb.fr
