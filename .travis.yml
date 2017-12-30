@@ -1,19 +1,25 @@
 language: php
-
+dist: trusty
 php:
-  - 5.3
-  - 5.4
-  - 5.5
-  - 5.6
+  - '5.4'
+  - '5.5'
+  - '5.6'
+  - '7.0'
+  - '7.1'
+  - '7.2'
   - hhvm
   - nightly
+matrix:
+  include:
+    - php: "5.3"
+      dist: precise
 
-before_script:
-  - composer self-update
-  - composer install -n
+#before_script:
+#  - composer self-update
+#  - composer install -n
 
-script: phpunit
+script: vendor/bin/phpunit
 
-notifications:
-  email:
-    - system+travis-ci@hmlb.fr
+#notifications:
+ # email:
+  #  - system+travis-ci@hmlb.fr
