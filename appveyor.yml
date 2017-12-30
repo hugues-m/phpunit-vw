@@ -3,7 +3,7 @@ shallow_clone: false
 platform: 'x86'
 clone_folder: C:\projects\phpunit-vw
 init:
-  - cinst php --params '"/InstallDir:C:\tools\php"""'
+  - cinst php --params '"/InstallDir:C:\tools\php"'
   - cinst sqlite
   - SET PATH=C:\tools\php\;%PATH%
 install:
