@@ -3,9 +3,9 @@ shallow_clone: false
 platform: 'x86'
 clone_folder: C:\projects\phpunit-vw
 init:
-  - cinst php sqlite
+  - cinst php --params '"/InstallDir:C:\tools\php"'
+  - cinst sqlite
   - SET PATH=C:\tools\php\;%PATH%
-  - SET PATH=C:\tools\SQLite\;%PATH%
 install:
   - cd c:\tools\php
   - copy php.ini-production php.ini
