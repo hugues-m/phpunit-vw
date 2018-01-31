@@ -13,6 +13,11 @@ You can bypass pre-commit hooks and other anti liberal QA systems, and deploy in
 * VW Extension does not interfere with your dev environment so you can test your code in normal conditions.  
 * It automatically detects CI environments and makes your test suites succeed even with failing assertions or unwanted exceptions \o/
 
+* Since it may not be obvious anymore * this package was created as a joke during the Volkswagen emissions scandal in 2015 when software was found in VW vehicules that detected official testing conditions and changed the engine parameters to fake the output of emission of pollutant gases.  
+It has been adapted in a lot of language and we have a good laugh, thank you all :)  
+
+This is in no way a recommended package to use in any other goals than fun or trolling your QA collegues.
+
 ## Example
 
 Here are the results of running the [VWTest case](src/Tests/VWTest.php) in different environments:   
